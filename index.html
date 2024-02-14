@@ -1,102 +1,78 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-    <script defer src="js/index.js"></script>
-    <title>Portfolio Diego</title>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="assets/css/reset.css" /> -->
+    <link rel="stylesheet" href="assets/css/styles.css" /> 
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Diego López | Desarrollador BackEnd</title>
+  </head>
 
-  <header class="header">
-      <h1 class="h1">
-          <a href="#" class="a">Diego</a>
-      </h1>
-      <button class="button">
-        <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-        </svg>
+  <body>
+
+    <!-- Navbar -->
+    <nav>
+      <h1>Diego López</h1>
+      <ul class="navegacion">
+        <li><a href="#sobremi" class="nav-link">Sobre Mí</a></li>
+        <li><a href="#habilidaes" class="nav-link">Habilidades</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+      <button class="menu-hamburguesa" id="menu-hamburguesa">
+        <ion-icon class="barras" name="menu-outline"></ion-icon>
       </button>
-      <nav class="nav">
-          <ul class="ul">
-              <li class="li"><a href="#" title="Sobre mí" class="a"><i class="bi bi-person-vcard"></i> Sobre mí</a></li>
-              <li class="li"><a href="#" title="Habilidades" class="a"><i class="bi bi-calendar-check"></i> Habilidades</a></li>
-              <li class="li"><a href="#" title="Proyectos" class="a"><i class="bi bi-braces"></i> Proyectos</a></li>
-              <li class="li"><a href="#" title="Contacto" class="a"><i class="bi bi-person-lines-fill"></i> Contacto</a></li>
-          </ul>
-      </nav>
-  </header>
+    </nav>
 
-  <main class="main">
-
-    <section class="about-me">
-      <div class="grid-container">
-        <h1 class="name">Hola, me llamo Diego López Alonso</h1>
-        <h3 class="h3">Desarrollador de Software</h3>
-        <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum natus fuga quibusdam nemo. Officiis ex, minus aliquam suscipit quibusdam labore temporibus iste, nemo voluptates delectus repellendus, deleniti repellat ab numquam?</p>
-        <div class="rrss">
-          <button >Github</button>
-          <button>Linkedin</button>
-          <button>Correo</button>
-        </div>
-      </div>
-      <div class="logo">
-        <img src="images/umbreon.jpg" alt="Imagen de perfil" class="img"></img>
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img src="assets/images/wfh_1.svg" alt="jane-doe" loading="lazy" class="hero-img"/>
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-titulo">Sobre Mí</h2>
+        <p class="bio-texto">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+          dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+          inventore tempore minus nemo, iste ullam illo laboriosam maiores
+          repudiandae quos!
+        </p>
       </div>
     </section>
 
-    <section class="skills">
-      <h2>Habilidades</h2>
+    <!-- More about -->
+    <section class="mas-sobre">
+      <h2>Más sobre mí</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+        autem deleniti cupiditate molestias quis unde quae totam porro dicta
+        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+        nostrum dolor minus, libero delectus praesentium perferendis
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+        consequuntur labore? Ea totam voluptas amet!
+      </p>
     </section>
 
-    <section class="projects">
-      <h2>Proyectos</h2>
-      <p></p>
-      <div class="grid">
-        <article class="article">
-          <a href="#" title="Proyecto 1">
-            <img src="#" alt="Imagen" class="img" loading="lazy">
-            <h4 class="h4">Nombre del proyecto</h4>
-        </a>
-        </article>
-        <article class="article">
-          <a href="#" title="Proyecto 2">
-            <img src="#" alt="Imagen" class="img" loading="lazy">
-            <h4 class="h4">Nombre del proyecto</h4>
-          </a>
-        </article>
-        <article class="article">
-          <a href="#" title="Proyecto 3">
-            <img src="#" alt="Imagen" class="img" loading="lazy">
-            <h4 class="h4">Nombre del proyecto</h4>
-          </a>
-        </article>
-        <article class="article">
-          <a href="#" title="Proyecto 4">
-            <img src="#" alt="Imagen" class="img" loading="lazy">
-            <h4 class="h4">Nombre del proyecto</h4>
-          </a>
-        </article>
-      </div>
-    </section>
+    <!-- Skills section -->
 
-    <section class="contacto">
-      <form>
+    <!-- Projects section -->
 
-      </form>
-    </section>
+    <!-- Contact section -->
 
-  </main>
+    <!-- Social accounts - Fixed to the right -->
 
-  <footer class="footer">
-    <span>Creado por Diego</span>
-  </footer>
+    <!-- Footer section -->
 
-</body>
+    <script src="assets/js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>
