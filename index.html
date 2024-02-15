@@ -16,12 +16,14 @@
 
     <!-- Navbar -->
     <nav>
-      <h1>Diego López</h1>
+      <h1>
+        <a href="#about-me" id="about-me-title">Diego López</a>
+      </h1>
       <ul class="navegacion">
-        <li><a href="#sobremi" class="nav-link">Sobre Mí</a></li>
-        <li><a href="#habilidaes" class="nav-link">Habilidades</a></li>
-        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        <li><a href="#about-me" class="nav-link">Sobre Mí</a></li>
+        <li><a href="#mis-habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#titulo-de-proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#contacto-title" class="nav-link">Contacto</a></li>
       </ul>
       <button class="menu-hamburguesa" id="menu-hamburguesa">
         <ion-icon class="barras" name="menu-outline"></ion-icon>
@@ -29,7 +31,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="about">
+    <section class="hero" id="about-me">
       <img src="assets/images/wfh_1.svg" alt="jane-doe" loading="lazy" class="hero-img"/>
       <div class="bio animate__animated animate__shakeX">
         <h2 class="bio-titulo">Sobre Mí</h2>
@@ -63,7 +65,7 @@
 
     <!-- Skills section -->
     <section class="habilidades" id="habilidades">
-      <h2 class="header-habilidad">Mis habilidades</h2>
+      <h2 class="header-habilidad" id="mis-habilidades">Mis habilidades</h2>
       <div class="contenedor-habilidad">
         <div class="first-set animate__animated animate__pulse">
           <img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card"/>
@@ -80,27 +82,27 @@
 
     <!-- Projects section -->
     <section class="proyectos" id="proyectos">
-      <h2 class="titulo-de-proyectos">Mis proyectos</h2>
+      <h2 class="titulo-de-proyectos" id="titulo-de-proyectos">Mis proyectos</h2>
       <div class="contenedor-de-proyectos">
         <div class="contenedor-de-proyecto tarjeta-de-proyecto">
           <img src="assets/images/expenseTracker.png" alt="rastreador-de-gastos" loading="lazy" class="project-pic"/>
-          <h3 class="titulo-de-proyectos">Rastreador de Gastos</h3>
+          <h3 class="titulo-de-proyecto">Rastreador de Gastos</h3>
           <p class="detalle-de-proyectos">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
             ratione vel inventore labore commodi modi quos culpa aut saepe!
             Alias!
           </p>
-          <a href="#" target="_blank" class="enlace-de-proyecto">Check it Out</a>
+          <a href="#" target="_blank" class="enlace-de-proyecto">Echale un vistazo!</a>
         </div>
         <div class="contenedor-de-proyecto tarjeta-de-proyecto">
           <img src="assets/images/netflixClone.png" alt="netflic-clone" loading="lazy" class="project-pic"/>
-          <h3 class="titulo-proyecto">Netflix Clone</h3>
+          <h3 class="titulo-de-proyecto">Netflix Clone</h3>
           <p class="detalles-proyecto">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
             ratione vel inventore labore commodi modi quos culpa aut saepe!
             Alias!
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <a href="#" target="_blank" class="enlace-de-proyecto">Echale un vistazo!</a>
         </div>
         <div class="contenedor-de-proyecto tarjeta-de-proyecto">
           <img src="assets/images/greenyEarth.png" alt="greeny-earth" loading="lazy" class="project-pic"/>
@@ -117,10 +119,10 @@
 
     <!-- Contact section -->
     <section class="contacto" id="contacto">
-      <h2>Contactame</h2>
+      <h2 id="contacto-title">Contactame</h2>
       <div class="contenedor-formulario-contacto">
         <div class="formulario-contacto">
-          <form action="" method="POST">
+          <form action="https://formspree.io/f/mrgnqkpo" method="POST">
             <div class="control-formulario">
               <label for="name">Nombre</label>
               <input type="text" id="name" name="sender-name" placeholder="Escribe tu nombre" class="input-field" required/>

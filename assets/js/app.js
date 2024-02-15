@@ -1,14 +1,4 @@
 'use strict'
-// funcionalidad de desplazar hacia arriba
-const desplazarArriba = document.querySelector("#desplazarse-hacia-arriba");
-
-desplazarArriba.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
-});
 
 // Selecciones para Barra de navegación hamburguesa
 
@@ -19,6 +9,17 @@ const nav = document.querySelector("nav");
 burger.addEventListener("click", () => {
     ul.classList.toggle("show");
   });
+
+// funcionalidad de desplazar hacia arriba
+const desplazarArriba = document.querySelector("#desplazarse-hacia-arriba");
+
+desplazarArriba.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
 
 // Cerrar el menú de hambuguesa cuando se hace click en un enlace  
 
