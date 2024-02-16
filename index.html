@@ -4,24 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="assets/css/reset.css" /> -->
     <link rel="stylesheet" href="assets/css/styles.css" /> 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/my-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/my-icon.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Diego López | Desarrollador BackEnd</title>
   </head>
 
   <body>
 
-    <!-- Navbar -->
-    <nav>
-      <h1>
-        <a href="#about-me" id="about-me-title">Diego López</a>
-      </h1>
-      <ul class="navegacion">
+    <!--   NAVBAR   -->
+    <nav class="navbar">
+      <h1>Diego López</h1>
+      <ul class="links-navbar">
         <li><a href="#about-me" class="nav-link">Sobre Mí</a></li>
-        <li><a href="#mis-habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
         <li><a href="#titulo-de-proyectos" class="nav-link">Proyectos</a></li>
         <li><a href="#contacto-title" class="nav-link">Contacto</a></li>
       </ul>
@@ -30,12 +27,17 @@
       </button>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="about-me">
-      <img src="assets/images/wfh_1.svg" alt="jane-doe" loading="lazy" class="hero-img"/>
+    <!-- ABOUT-ME -->
+    <section class="about-me" id="about-me">
+      <img src="assets/images/yo.png" alt="diego-lopez" loading="lazy" class="img-me"/>
       <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-titulo">Sobre Mí</h2>
-        <p class="bio-texto">
+        <h2 class="bio-title">Hola, soy Diego López 👋</h2>
+        <h3 class="bio-subtitle">Desarrollador BackEnd</h3>
+        <p class="bio-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+          dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+          inventore tempore minus nemo, iste ullam illo laboriosam maiores
+          repudiandae quos!
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
           dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
           inventore tempore minus nemo, iste ullam illo laboriosam maiores
@@ -44,50 +46,60 @@
       </div>
     </section>
 
-    <!-- More about -->
-    <section class="mas-sobre">
-      <h2>Más sobre mí</h2>
+    <!-- MORE ABOUT-ME -->
+    <section class="more-about-me">
+      <h2>Sobre mí</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
         nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
         autem deleniti cupiditate molestias quis unde quae totam porro dicta
         iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-        nostrum dolor minus, libero delectus praesentium perferendis
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-        consequuntur labore? Ea totam voluptas amet!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Iusto maiores voluptate architecto cupiditate voluptatem facilis 
+        nobis repudiandae necessitatibus, quaerat fugit eligendi corrupti odio, 
+        iure dolorum tempora commodi, at est saepe.
       </p>
     </section>
 
-    <!-- Skills section -->
-    <section class="habilidades" id="habilidades">
-      <h2 class="header-habilidad" id="mis-habilidades">Mis habilidades</h2>
-      <div class="contenedor-habilidad">
+    <!--   SKILLS   -->
+    <section class="skills" id="skills">
+      <h2 class="header-skills" id="my-skills">Mis habilidades</h2>
+      <h3 class="header-skill">FrontEnd</h3>
+      <div class="container-skills">
         <div class="first-set animate__animated animate__pulse">
-          <img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card"/>
-          <img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card"/>
-          <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card"/>
+          <img src="https://skillicons.dev/icons?i=html" alt="" loading="lazy" class="icon icon-card"/>
+          <img src="https://skillicons.dev/icons?i=css" alt="" loading="lazy" class="icon icon-card"/>
+          <img src="https://skillicons.dev/icons?i=js" alt="" loading="lazy" class="icon icon-card"/>
         </div>
+        <h3 class="header-skill">BackEnd</h3>
         <div class="second-set animate__animated animate__pulse">
-          <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card"/>
-          <img src="assets/icons/icons8-react-native.svg" alt="" loading="lazy" class="icon icon-card"/>
-          <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card"/>
+          <img src="https://skillicons.dev/icons?i=python" alt="" loading="lazy" class="icon icon-card"/>
+          <img src="https://skillicons.dev/icons?i=django" alt="" loading="lazy" class="icon icon-card"/>
+          <img src="https://skillicons.dev/icons?i=fastapi" alt="" loading="lazy" class="icon icon-card"/>
+          <img src="https://skillicons.dev/icons?i=nodejs" alt="" loading="lazy" class="icon icon-card"/>
+          <img src="https://skillicons.dev/icons?i=express" alt="" loading="lazy" class="icon icon-card"/>
+        </div>
+        <h3 class="header-skill">BBDD</h3>
+        <div class="third-set animate__animated animate__pulse">
+          <img src="https://skillicons.dev/icons?i=mysql" alt="" loading="lazy" class="icon icon-card"/>
+          <img src="https://skillicons.dev/icons?i=mongo" alt="" loading="lazy" class="icon icon-card"/>
+        </div>
+        <h3 class="header-skill">Control de versiones</h3>
+        <div class="four-set animate__animated animate__pulse">
+          <img src="https://skillicons.dev/icons?i=git" alt="" loading="lazy" class="icon icon-card"/>
+          <img src="https://skillicons.dev/icons?i=github" alt="" loading="lazy" class="icon icon-card"/>
         </div>
       </div>
     </section>
 
-    <!-- Projects section -->
+    <!--   PROJECTS   -->
     <section class="proyectos" id="proyectos">
       <h2 class="titulo-de-proyectos" id="titulo-de-proyectos">Mis proyectos</h2>
       <div class="contenedor-de-proyectos">
         <div class="contenedor-de-proyecto tarjeta-de-proyecto">
           <img src="assets/images/expenseTracker.png" alt="rastreador-de-gastos" loading="lazy" class="project-pic"/>
           <h3 class="titulo-de-proyecto">Rastreador de Gastos</h3>
-          <p class="detalle-de-proyectos">
+          <p class="detalles-de-proyecto">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
             ratione vel inventore labore commodi modi quos culpa aut saepe!
             Alias!
@@ -97,7 +109,7 @@
         <div class="contenedor-de-proyecto tarjeta-de-proyecto">
           <img src="assets/images/netflixClone.png" alt="netflic-clone" loading="lazy" class="project-pic"/>
           <h3 class="titulo-de-proyecto">Netflix Clone</h3>
-          <p class="detalles-proyecto">
+          <p class="detalles-de-proyecto">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
             ratione vel inventore labore commodi modi quos culpa aut saepe!
             Alias!
@@ -117,7 +129,7 @@
       </div>
     </section>
 
-    <!-- Contact section -->
+    <!--   CONTACT   -->
     <section class="contacto" id="contacto">
       <h2 id="contacto-title">Contactame</h2>
       <div class="contenedor-formulario-contacto">
@@ -141,7 +153,7 @@
       </div>
     </section>
 
-    <!-- Social accounts - Fixed to the right -->
+    <!--   RRSS   -->
     <div class="sociales">
       <a href="#" target="_blank">
         <img src="assets/icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy" class="socicon"/>
@@ -157,17 +169,14 @@
       </a>
     </div>
 
-    <!-- Button to-up -->
+    <!-- BUTTON TO-UP -->
     <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba">
       <img src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow" alt="desplazarse-hacia-arriba"/>
     </i>
 
-    <!-- Footer section -->
+    <!--   FOOTER   -->
     <footer>
-      <p class="copy">&copy; Copyright 2021</p>
-      <p class="copy">Built with &#x2661; by
-        <a href="https://twitter.com/koladechris" target="_blank">Kolade Chris (Ksound)</a>
-      </p>
+      <p class="copy">Creado con 💗 by <a href="#about-me">Diego López</a></p>
     </footer>
 
     <script src="assets/js/app.js"></script>

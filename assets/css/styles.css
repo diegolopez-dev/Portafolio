@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*   VARIABLES   */
+
 :root {
   --font-family: "Poppins", sans-serf;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #272C26;
-  --primary-color: #c5b044;
-  --secondary-color: #c2681e;
-  --primary-shadow: #50482a;
-  --secondary-shadow: #fff399;
+  --bg-color: #2b3133;
+  --secondary-bg-color: #3f4e4f;
+  --font-color: #e1e3c2;
+  --hover-color: #dfd27d;
+  --shadow: #fff399;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
-/* Variables fin */
 
 html {
   scroll-behavior: smooth;
@@ -34,11 +35,11 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--font-color);
 }
 
 a:hover {
-  color: var(--secondary-color);
+  color: var(--hover-color);
 }
 
 body {
@@ -48,7 +49,7 @@ body {
 
 /*  NAVBAR  */
 
-nav {
+.navbar {
   position: sticky;
   top: 0;
   left: 0;
@@ -56,39 +57,36 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 3.5rem;
-  background-color: var(--primary-shadow);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem 3.5rem;
+  background-color: var(--secondary-bg-color);
+  box-shadow: 0 2px 2px var(--shadow);
 }
 
-nav h1 {
-  color: var(--primary-color);
+.navbar h1 {
+  color: var(--font-color);
 }
 
-#about-me-title:hover {
-  text-decoration: none;
-}
-
-nav a {
-  color: var(--primary-color);
+.navbar a {
+  color: var(--font-color);
   transition: var(--transition);
 }
-nav a:hover {
-  color: var(--secondary-shadow);
-  border-bottom: 2px solid var(--secondary-shadow);
+
+.navbar a:hover {
+  color: var(--hover-color);
+  border-bottom: 2px solid var(--hover-color);
 }
 
-nav ul {
+.navbar ul {
   display: flex;
-  gap: 1.9rem;
+  gap: 2rem;
 }
 
-nav ul li {
+.navbar ul li {
   font-weight: var(--normal-font);
 }
 
 .menu-hamburguesa {
-  color: var(--primary-color);
+  color: var(--font-color);
   font-size: 2rem;
   border: 0;
   background-color: transparent;
@@ -96,34 +94,46 @@ nav ul li {
   display: none;
 }
 
-/*   FIN NAVBAR   */
+/*   ABOUT-ME   */
 
-/*   HERO   */
-
-.hero {
-  color: var(--primary-color);
+.about-me {
+  color: var(--font-color);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  max-width: 68.75rem;
   margin: auto;
+  padding: 1rem 6rem;
+  
 }
 
-.hero img {
-  height: 37.5rem;
-  width: 37.5rem;
+.about-me img {
+  height: 34rem;
+  width: 28rem;
+  border-radius: 20%;
 }
 
 .bio {
-  width: 25rem;
+  background-color: var(--secondary-bg-color);
   padding: 0.625rem;
   border-radius: 6px;
-  box-shadow: 0px 2px 10px 2px var(--secondary-shadow);
+  box-shadow: 0px 2px 10px 2px var(--shadow);
 }
 
 .bio h2 {
+  color: var(--shadow);
   margin-bottom: var(--bottom-margin);
+}
+
+.bio h3 {
+  white-space: nowrap;
+  width: 21ch;
+  animation: typing 2.5s steps(21);
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from { width: 0 }
 }
 
 .bio p {
@@ -131,71 +141,61 @@ nav ul li {
   padding: 0.3rem 0;
 }
 
-/*   FIN HERO   */
+/*   MORE ABOUT-ME   */
 
-/*   MÁS SOBRE MÍ   */
-
-.mas-sobre {
-  color: var(--primary-color);
+.more-about-me {
+  color: var(--font-color);
+  margin-top: 2rem;
   padding: 1rem 6rem;
 }
 
-.mas-sobre h2 {
+.more-about-me h2 {
+  color: var(--shadow);
   margin-bottom: var(--bottom-margin);
   text-align: center;
 }
 
-.mas-sobre p {
-  line-height: var(--line-height);
-  padding: 0.4rem;
-}
+/*   SKILLS   */
 
-/*   FIN MÁS SOBRE MÍ  */
-
-/*   HABILIDADES   */
-
-.habilidades {
-  color: var(--primary-color);
-  max-width: 68.75rem;
-  margin: auto;
+.skills {
+  color: var(--font-color);
   text-align: center;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
-.header-habilidad {
-  margin-bottom: 1rem;
+.header-skills {
+  color: var(--shadow);
+  margin: 1rem;
 }
 
-.contenedor-habilidad img {
-  padding: 1.25rem;
+.header-skill {
+  margin: 1rem;
 }
 
 .icon {
-  width: 11.875rem;
-  height: 11.25rem;
+  width: 8rem;
+  height: 8rem;
 }
 
 .icon-card {
-  background-color: var(--primary-shadow);
+  background-color: var(--secondary-bg-color);
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: 0 3px 10px var(--shadow);
   padding: 20px;
   margin: 10px;
 }
 
-/*   FIN HABILIDADES   */
-
-/*   PROYECTOS   */
+/*   PROJECTS  */
 
 .proyectos {
-  color: var(--primary-color);
+  color: var(--font-color);
   padding: 32px 0;
   margin-top: 2rem;
 }
 
 .project-pic {
-  width: 65%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
 }
 
 .contenedor-de-proyectos {
@@ -207,6 +207,7 @@ nav ul li {
 .titulo-de-proyectos {
   text-align: center;
   margin-bottom: 1rem;
+  color: var(--shadow);
 }
 
 .contenedor-de-proyecto {
@@ -215,60 +216,56 @@ nav ul li {
   padding: 1rem;
 }
 
-.contenedor-de-proyecto p {
-  padding: 0.4rem;
-}
-
 .titulo-de-proyecto {
-  color: var(--bg-color);
-  font-weight: var(--bolder-font);
+  color: var(--shadow);
+  font-weight: var(--bold-font);
   margin-bottom: var(--bottom-margin);
 }
 
 .detalles-de-proyecto {
+  text-align: left;
   margin-bottom: var(--bottom-margin);
 }
 
 .tarjeta-de-proyecto {
-  background-color: var(--primary-shadow);
+  background-color: var(--secondary-bg-color);
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: 0 3px 10px var(--shadow);
   padding: 20px;
   margin: 10px;
 }
 
 .enlace-de-proyecto{
-  color: var(--bg-color);
+  color: var(--shadow);
   font-weight: var(--bold-font);
 }
 
-/*   FIN PROYECTOS   */
-
-/*   CONTACTO   */
+/*   CONTACT   */
 
 .contacto {
-  color: var(--primary-color);
+  color: var(--font-color);
   margin-top: 2rem;
 }
 
 .contacto h2 {
+  color: var(--shadow);
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
 }
 
 .contenedor-formulario-contacto {
-  background-color: var(--primary-shadow);
+  background-color: var(--secondary-bg-color);
   max-width: 40.75rem;
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: 0 3px 10px var(--shadow);
 }
 
 .contenedor-formulario-contacto label {
   line-height: 2.7em;
   font-weight: var(--bold-font);
-  color: var(--primary-color);
+  color: var(--font-color);
 }
 
 .contenedor-formulario-contacto textarea {
@@ -283,7 +280,7 @@ nav ul li {
   padding-bottom: 10px;
   border-radius: 5px;
   border: none;
-  border: 2px outset var(--primary-color);
+  border: 2px outset var(--font-color);
   font-size: 0.875rem;
   outline: none;
 }
@@ -298,7 +295,7 @@ nav ul li {
   padding: 10px;
   margin: 10px 0;
   background-color: #fff;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--font-color);
   border-radius: 5px;
   font-size: 1rem;
   font-weight: var(--bold-font);
@@ -306,12 +303,11 @@ nav ul li {
 }
 
 .submit-btn:hover {
-  background-color: var(--primary-color);
-  border: 2px solid var(--primary-color);
+  color: var(--bg-color);
+  background-color: var(--shadow);
+  border: 2px solid var(--bg-color);
   cursor: pointer;
 }
-
-/*   FIN CONTACTO   */
 
 /*   RRSS   */
 
@@ -345,33 +341,27 @@ nav ul li {
   height: 3rem;
 }
 
-/*  FIN TO-UP   */
-
 /*  FOOTER   */
 
 footer {
-  color: var(--primary-color);
-  background-color: var(--bg-color);
+  color: var(--font-color);
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
 }
 
-/*  FIN FOOTER   */
-
 /*   RESPONSIVE 720PX   */
 
 @media screen and (max-width: 720px) {
-  /* los cambios se reflejan en una pantalla con un ancho de 720px e inferior */
 
   /*   NAVBAR RESPONSIVE   */
-  nav {
+  .navbar {
     padding: 1.5rem 1rem;
   }
 
-  nav ul {
+  .navbar ul {
     position: fixed;
-    background-color: var(--primary-shadow);
+    background-color: var(--secondary-bg-color);
     flex-direction: column;
     top: 87px;
     left: 10%;
@@ -381,7 +371,7 @@ footer {
     transition: transform 0.8s ease-in;
   }
 
-   nav ul li {
+  .navbar ul li {
     margin: 8px;
   }
 
@@ -389,21 +379,23 @@ footer {
     display: block;
   }
 
-  nav ul.show {
+  .navbar ul.show {
     transform: translateX(0);
   }
 
-  /*   HERO RESPONSIVE   */
-  .hero {
+  /*   ABOUT-ME RESPONSIVE   */
+  .about-me {
     margin-top: -4rem;
     flex-direction: column;
     gap: 0;
   }
 
-  .hero img {
-        height: 37.5rem;
-        width: 30rem;
-    }
+  .about-me img {
+    height: 34rem;
+    width: 28rem;
+    border-radius: 20%;
+    margin-left: -1rem;
+  }
 
   .bio {
     margin-top: -7rem;
