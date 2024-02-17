@@ -7,11 +7,11 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #2b3133;
-  --secondary-bg-color: #3f4e4f;
-  --font-color: #e1e3c2;
+  --bg-color: #1e2021;
+  --secondary-bg-color: #11535a;
+  --font-color: #d0d498;
   --hover-color: #dfd27d;
-  --shadow: #fff399;
+  --shadow: #ffe100d6;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -57,18 +57,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 3.5rem;
+  padding: .5rem 3.5rem;
   background-color: var(--secondary-bg-color);
-  box-shadow: 0 2px 2px var(--shadow);
+  box-shadow: 0 1px 1px var(--shadow);
 }
 
 .navbar h1 {
-  color: var(--font-color);
+  color: var(--shadow);
+  margin-left: 2.5rem;
 }
 
 .navbar a {
   color: var(--font-color);
   transition: var(--transition);
+  margin-right: 2.5rem;
 }
 
 .navbar a:hover {
@@ -78,7 +80,7 @@ body {
 
 .navbar ul {
   display: flex;
-  gap: 2rem;
+  gap: .5rem;
 }
 
 .navbar ul li {
@@ -103,21 +105,20 @@ body {
   justify-content: center;
   gap: 2.5rem;
   margin: auto;
-  padding: 1rem 6rem;
-  
+  padding: 2rem 6rem;
 }
 
 .about-me img {
-  height: 34rem;
+  height: 30rem;
   width: 28rem;
   border-radius: 20%;
 }
 
 .bio {
   background-color: var(--secondary-bg-color);
-  padding: 0.625rem;
+  padding: 0.6rem;
   border-radius: 6px;
-  box-shadow: 0px 2px 10px 2px var(--shadow);
+  box-shadow: 0 2px 4px 2px var(--shadow);
 }
 
 .bio h2 {
@@ -173,16 +174,16 @@ body {
 }
 
 .icon {
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
 }
 
 .icon-card {
   background-color: var(--secondary-bg-color);
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--shadow);
+  box-shadow: 0 2px 4px var(--shadow);
   padding: 20px;
-  margin: 10px;
+  margin: 5px;
 }
 
 /*   PROJECTS  */
@@ -190,7 +191,7 @@ body {
 .proyectos {
   color: var(--font-color);
   padding: 32px 0;
-  margin-top: 2rem;
+  margin: 2rem 5.5rem;
 }
 
 .project-pic {
@@ -202,6 +203,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: .5rem;
 }
 
 .titulo-de-proyectos {
@@ -224,13 +226,13 @@ body {
 
 .detalles-de-proyecto {
   text-align: left;
-  margin-bottom: var(--bottom-margin);
+  margin-bottom: var(--bottom-margin)
 }
 
 .tarjeta-de-proyecto {
   background-color: var(--secondary-bg-color);
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--shadow);
+  box-shadow: 0 2px 4px var(--shadow);
   padding: 20px;
   margin: 10px;
 }
@@ -255,11 +257,11 @@ body {
 
 .contenedor-formulario-contacto {
   background-color: var(--secondary-bg-color);
-  max-width: 40.75rem;
+  max-width: 38rem;
   margin: 0 auto;
-  padding: 0.938rem;
+  padding: 1rem;
   border-radius: 5px;
-  box-shadow: 0 3px 10px var(--shadow);
+  box-shadow: 0 2px 4px var(--shadow);
 }
 
 .contenedor-formulario-contacto label {
@@ -269,24 +271,25 @@ body {
 }
 
 .contenedor-formulario-contacto textarea {
-  min-height: 6.25rem;
+  min-height: 5rem;
   font-size: 14px;
 }
 
 .contenedor-formulario-contacto .input-field {
   width: 100%;
   padding: 0.5rem;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border-radius: 5px;
   border: none;
   border: 2px outset var(--font-color);
-  font-size: 0.875rem;
+  font-size: 1rem;
   outline: none;
 }
 
 .input-field::placeholder {
   padding: 0.5rem;
+  font-size: 1rem;
   color: var(--bg-color);
 }
 
@@ -316,7 +319,7 @@ body {
   flex-direction: column;
   position: fixed;
   left: 1%;
-  bottom: 50%;
+  bottom: 45%;
 }
 
 .socicon {
@@ -325,13 +328,11 @@ body {
   border-radius: 50%;
 }
 
-/*  FIN RRSS   */
-
 /*  TO-UP   */
 
 .desplazarse-hacia-arriba {
   position: fixed;
-  left: 0.5%;
+  left: 1%;
   bottom: 3%;
   cursor: pointer;
 }
@@ -350,9 +351,9 @@ footer {
   margin: 2rem 0 0;
 }
 
-/*   RESPONSIVE 720PX   */
+/*   RESPONSIVE 768PX   */
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
 
   /*   NAVBAR RESPONSIVE   */
   .navbar {
