@@ -7,11 +7,11 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #000E1F; 
-  --secondary-bg-color: #002248;
-  --font-color: #d0d498;
+  --bg-color: #0b0a13; 
+  --secondary-bg-color: #0b0a19;
+  --font-color: #daeb8b;
   --hover-color: #dfd27d;
-  --shadow: #ffe100d6;
+  --shadow: #ffe100;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -68,19 +68,19 @@ body {
 }
 
 .navbar a {
-  color: var(--font-color);
+  color: var(--shadow);
   transition: var(--transition);
   margin-right: 2.5rem;
 }
 
 .navbar a:hover {
-  color: var(--hover-color);
-  border-bottom: 2px solid var(--hover-color);
+  color: var(--font-color);
+  border-bottom: 2px solid var(--shadow);
 }
 
 .navbar ul {
   display: flex;
-  gap: .5rem;
+  gap: 1rem;
 }
 
 .navbar ul li {
@@ -119,8 +119,12 @@ body {
 }
 
 .bio h2 {
-  color: var(--shadow);
+  color: var(--font-color);
   margin-bottom: var(--bottom-margin);
+}
+
+.bio h2 span {
+  color: var(--shadow);
 }
 
 .bio p {
@@ -142,6 +146,7 @@ body {
 .sociales img {
   width: 3rem;
   height: 3rem;
+
 }
 
 /*   MORE ABOUT-ME   */
@@ -169,6 +174,10 @@ body {
 .header-skills {
   color: var(--shadow);
   margin: 1rem;
+}
+
+.skills p {
+  padding: 1rem 6rem;
 }
 
 .header-skill {
@@ -202,6 +211,7 @@ body {
 }
 
 .contenedor-de-proyectos {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -244,6 +254,11 @@ body {
   font-weight: var(--bold-font);
 }
 
+/*   CONTACTO RESPONSIVE  */
+.contenedor-formulario-contacto {
+  max-width: 23.75rem;
+}
+
 /*   CONTACT   */
 
 .contacto {
@@ -259,7 +274,7 @@ body {
 
 .contenedor-formulario-contacto {
   background-color: var(--secondary-bg-color);
-  max-width: 38rem;
+  max-width: 30rem;
   margin: 0 auto;
   padding: 1rem;
   border-radius: 5px;
@@ -350,27 +365,31 @@ footer {
 
   /*   NAVBAR RESPONSIVE   */
   .navbar {
-    padding: 1.5rem 1rem;
+    padding: .5rem .5rem;
+  }
+
+  .navbar h1 {
+    margin-left: .5rem;
   }
 
   .navbar ul {
     position: fixed;
-    background-color: var(--secondary-bg-color);
+    background-color: var(--bg-color);
     flex-direction: column;
-    top: 87px;
-    left: 10%;
-    width: 90%;
+    top: 3.55rem;
+    width: 100%;
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.8s ease-in;
   }
 
   .navbar ul li {
-    margin: 8px;
+    margin: 16px;
   }
 
   .menu-hamburguesa {
     display: block;
+    margin-right: .5rem;
   }
 
   .navbar ul.show {
@@ -383,51 +402,89 @@ footer {
     flex-direction: column;
     gap: 0;
   }
-
+  
   .about-me img {
-    height: 34rem;
-    width: 28rem;
-    border-radius: 20%;
-    margin-left: -1rem;
+    height: 8rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin-top: 3rem;
   }
 
   .bio {
-    margin-top: -7rem;
-    width: 20.5rem;
+    margin-top: .5rem;
+    width: 40rem;
+  }
+
+  .bio h2{
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .bio h3{
+    text-align: center;
+  }
+  
+  .sociales {
+    margin-top: -1.5rem;
+  }
+  .sociales img {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   /*   MÁS SOBRE MÍ RESPONSIVE   */
-  .mas-sobre {
-    margin-top: 2rem;
-    padding: 1rem 3.5rem;
+  .more-about-me {
+    margin-top: 0;
+    padding: 0;
   }
 
-  .mas-sobre h2 {
+  .more-about-me h2 {
     text-align: center;
   }
 
-  .mas-sobre p {
-    text-align: justify;
+  .more-about-me p {
+    padding: 0 3rem 0 3rem;
   }
 
   /*   HABILIDADES RESPONSIVE  */
+  .header-skills {
+    margin: 0;
+  }
+
+  .skills p {
+    padding: 1rem 3rem 0 3rem;
+    text-align: start;
+  }
+
+  .container-skills {
+    padding: 0rem 3rem 0 3rem;
+  }
+
   .icon {
-    width: 5.875rem;
-    height: 5.25rem;
+    width: 5.5rem;
+    height: 5.5rem;
   }
 
   /*   PROYECTOS RESPONSIVE  */
+  .proyectos {
+    margin-top: 0;
+  }
+
   .contenedor-de-proyectos {
     flex-direction: column;
   }
 
   .contenedor-de-proyecto {
-    width: 20.875rem;
+    width: 24rem;
   }
 
-  /*   CONTACTO RESPONSIVE  */
-  .contenedor-formulario-contacto {
-    max-width: 23.75rem;
+  /*   CONTACTO RESPONSIVE   */
+  .contacto {
+    padding: 0rem 5rem 0 5rem;
+  }
+
+  .contacto h2 {
+    margin-top: 0;
   }
 }
 

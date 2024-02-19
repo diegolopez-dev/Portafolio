@@ -11,13 +11,11 @@
     <title>Diego López | Desarrollador BackEnd</title>
   </head>
 
-  <body>
-
     <!--   NAVBAR   -->
     <nav class="navbar">
       <h1>Diego López</h1>
       <ul class="links-navbar">
-        <li><a href="#about-me" class="nav-link">Sobre Mí</a></li>
+        <li><a href="#about-me" class="active nav-link">Sobre Mí</a></li>
         <li><a href="#skills" class="nav-link">Habilidades</a></li>
         <li><a href="#titulo-de-proyectos" class="nav-link">Proyectos</a></li>
         <li><a href="#contacto-title" class="nav-link">Contacto</a></li>
@@ -31,7 +29,7 @@
     <section class="about-me" id="about-me">
       <img src="assets/images/yo.png" alt="diego-lopez" loading="lazy" class="img-me"/>
       <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">Hola, soy Diego López 👋</h2>
+        <h2 class="bio-title">Hola, soy <span>Diego López</span> 👋</h2>
         <h3 class="bio-subtitle">Desarrollador BackEnd</h3>
         <p class="bio-text">
           💻 Experiencia en desarrollo de aplicaciones tanto en la parte FrontEnd como BackEnd.
@@ -73,6 +71,7 @@
     <!--   SKILLS   -->
     <section class="skills" id="skills">
       <h2 class="header-skills" id="my-skills">Mis habilidades</h2>
+      <p class="skills-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsum magni hic, dicta numquam veritatis fuga? Nostrum ea rem, eligendi nam fugit eveniet, molestiae vitae excepturi consequuntur, quibusdam error tempore.</p>
       <h3 class="header-skill">FrontEnd</h3>
       <div class="container-skills">
         <div class="first-set animate__animated animate__pulse">
@@ -87,7 +86,6 @@
           <img src="https://skillicons.dev/icons?i=fastapi" alt="" loading="lazy" class="icon icon-card"/>
           <img src="https://skillicons.dev/icons?i=nodejs" alt="" loading="lazy" class="icon icon-card"/>
           <img src="https://skillicons.dev/icons?i=express" alt="" loading="lazy" class="icon icon-card"/>
-        </div>
         <h3 class="header-skill">BBDD</h3>
         <div class="third-set animate__animated animate__pulse">
           <img src="https://skillicons.dev/icons?i=mysql" alt="" loading="lazy" class="icon icon-card"/>
@@ -104,7 +102,9 @@
     <!--   PROJECTS   -->
     <section class="proyectos" id="proyectos">
       <h2 class="titulo-de-proyectos" id="titulo-de-proyectos">Mis proyectos</h2>
+
       <div class="contenedor-de-proyectos">
+
         <div class="contenedor-de-proyecto tarjeta-de-proyecto">
           <img src="assets/images/expenseTracker.png" alt="rastreador-de-gastos" loading="lazy" class="project-pic"/>
           <h3 class="titulo-de-proyecto">Rastreador de Gastos</h3>
@@ -115,6 +115,7 @@
           </p>
           <a href="#" target="_blank" class="enlace-de-proyecto">Echale un vistazo!</a>
         </div>
+
         <div class="contenedor-de-proyecto tarjeta-de-proyecto">
           <img src="assets/images/netflixClone.png" alt="netflic-clone" loading="lazy" class="project-pic"/>
           <h3 class="titulo-de-proyecto">Netflix Clone</h3>
@@ -125,6 +126,7 @@
           </p>
           <a href="#" target="_blank" class="enlace-de-proyecto">Echale un vistazo!</a>
         </div>
+
         <div class="contenedor-de-proyecto tarjeta-de-proyecto">
           <img src="assets/images/greenyEarth.png" alt="greeny-earth" loading="lazy" class="project-pic"/>
           <h3 class="titulo-de-proyecto">Greeny Earth</h3>
@@ -135,6 +137,7 @@
           </p>
           <a href="#" target="_blank" class="enlace-de-proyecto">Echale un vistazo!</a>
         </div>
+
         <div class="contenedor-de-proyecto tarjeta-de-proyecto">
           <img src="assets/images/expenseTracker.png" alt="rastreador-de-gastos" loading="lazy" class="project-pic"/>
           <h3 class="titulo-de-proyecto">Rastreador de Gastos</h3>
@@ -145,12 +148,13 @@
           </p>
           <a href="#" target="_blank" class="enlace-de-proyecto">Echale un vistazo!</a>
         </div>
+
       </div>
     </section>
 
     <!--   CONTACT   -->
     <section class="contacto" id="contacto">
-      <h2 id="contacto-title">Contactame</h2>
+      <h2 id="contacto-title">Contáctame</h2>
       <div class="contenedor-formulario-contacto">
         <div class="formulario-contacto">
           <form action="https://formspree.io/f/mrgnqkpo" method="POST">
@@ -181,8 +185,8 @@
       <p class="copy">Creado con 💗 by <a class="me" href="#about-me">Diego López</a></p>
     </footer>
 
-    <script src="assets/js/app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
