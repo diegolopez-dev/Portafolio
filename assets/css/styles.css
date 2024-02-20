@@ -57,7 +57,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: .5rem 3.5rem;
+  padding: .4rem 3.5rem;
   background-color: var(--secondary-bg-color);
   box-shadow: 0 1px 1px var(--shadow);
 }
@@ -109,13 +109,13 @@ body {
 }
 
 .about-me img {
-  height: 30rem;
-  width: 28rem;
+  height: 25rem;
+  width: 25rem;
   border-radius: 20%;
 }
 
 .bio {
-  padding: 0.6rem;
+  padding: 0.5rem;
 }
 
 .bio h2 {
@@ -127,9 +127,13 @@ body {
   color: var(--shadow);
 }
 
+.bio h3 {
+  margin-bottom: var(--bottom-margin);
+}
+
 .bio p {
   line-height: var(--line-height);
-  padding: 0.3rem 0;
+  padding: 0.2rem 0;
 }
 
 /*   RRSS   */
@@ -140,12 +144,12 @@ body {
   justify-content: center;
   gap: 2rem;
   border-radius: 50%;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .sociales img {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
 
 }
 
@@ -211,7 +215,6 @@ body {
 }
 
 .contenedor-de-proyectos {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -226,8 +229,7 @@ body {
 
 .contenedor-de-proyecto {
   text-align: center;
-  width: 21.875rem;
-  padding: 1rem;
+  width: 22rem;
 }
 
 .titulo-de-proyecto {
@@ -376,7 +378,7 @@ footer {
     position: fixed;
     background-color: var(--bg-color);
     flex-direction: column;
-    top: 3.55rem;
+    top: 3.53rem;
     width: 100%;
     text-align: center;
     transform: translateX(120%);
@@ -412,7 +414,7 @@ footer {
 
   .bio {
     margin-top: .5rem;
-    width: 40rem;
+    width: 44rem;
   }
 
   .bio h2{
@@ -427,6 +429,7 @@ footer {
   .sociales {
     margin-top: -1.5rem;
   }
+
   .sociales img {
     width: 2.5rem;
     height: 2.5rem;
@@ -475,36 +478,62 @@ footer {
   }
 
   .contenedor-de-proyecto {
-    width: 24rem;
-  }
-
-  /*   CONTACTO RESPONSIVE   */
-  .contacto {
-    padding: 0rem 5rem 0 5rem;
-  }
-
-  .contacto h2 {
-    margin-top: 0;
+    width: 30rem;
   }
 }
 
 /*   RESPONSIVE 420PX   */
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
+
   .hero img {
     height: 37.5rem;
     width: 23rem;
   }
 
   .bio {
-    width: 18.3rem;
+    padding: 0;
+    margin-top: .5rem;
+    max-width: 22rem;
+  }
+
+  .more-about-me {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .more-about-me h2 {
+    text-align: center;
+  }
+
+  .more-about-me p {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+
+  .skills p {
+    padding: .5rem 1.5rem 0 1.5rem;
+    text-align: start;
+  }
+
+  .container-skills {
+    padding: .5rem 1.5rem 0 1.5rem;
+  }
+
+  .icon {
+    width: 5rem;
+    height: 5rem;
   }
 
   .contenedor-de-proyecto {
-    width: 17.875rem;
+    flex-direction: column;
+    max-width: 22rem;
+  }
+
+  .contacto {
+    margin-top: -2rem;
   }
 
   .contenedor-formulario-contacto{
-    max-width: 17.75rem;
+    max-width: 22rem;
   }
 } 
