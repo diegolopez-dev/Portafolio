@@ -48,7 +48,6 @@ body {
 }
 
 /*  NAVBAR  */
-
 .navbar {
   position: sticky;
   top: 0;
@@ -62,23 +61,23 @@ body {
   box-shadow: 0 1px 1px var(--shadow);
 }
 
-.navbar h1 {
+.title-navbar {
   color: var(--shadow);
   margin-left: 2.5rem;
 }
 
-.navbar a {
+.nav-link {
   color: var(--shadow);
   transition: var(--transition);
   margin-right: 2.5rem;
 }
 
-.navbar a:hover {
+.nav-link:hover {
   color: var(--font-color);
   border-bottom: 2px solid var(--shadow);
 }
 
-.navbar ul {
+.links-navbar {
   display: flex;
   gap: 1rem;
 }
@@ -87,7 +86,7 @@ body {
   font-weight: var(--normal-font);
 }
 
-.menu-hamburguesa {
+.burger-menu {
   color: var(--font-color);
   font-size: 2rem;
   border: 0;
@@ -97,18 +96,16 @@ body {
 }
 
 /*   ABOUT-ME   */
-
 .about-me {
   color: var(--font-color);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  margin: auto;
   padding: 2rem 6rem;
 }
 
-.about-me img {
+.img-me {
   height: 25rem;
   width: 25rem;
   border-radius: 20%;
@@ -118,43 +115,47 @@ body {
   padding: 0.5rem;
 }
 
-.bio h2 {
+.bio-title {
   color: var(--font-color);
   margin-bottom: var(--bottom-margin);
 }
 
-.bio h2 span {
+.span-title {
   color: var(--shadow);
 }
 
-.bio h3 {
+.bio-subtitle {
   margin-bottom: var(--bottom-margin);
 }
 
-.bio p {
+.bio-text {
   line-height: var(--line-height);
   padding: 0.2rem 0;
 }
 
 /*   RRSS   */
-
-.sociales {
+.rrss {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   gap: 2rem;
-  border-radius: 50%;
   margin-top: 1rem;
 }
 
-.sociales img {
+.socicon {
   width: 2.5rem;
   height: 2.5rem;
-
+  background-color: var(--shadow);
+  border: 1px solid var(--shadow);
 }
 
-/*   MORE ABOUT-ME   */
+.socicon:hover {
+  background-color: var(--font-color);
+  border: 4px solid var(--font-color);
+  transition: var(--transition);
+}
 
+/*   MORE ABOUT ME   */
 .more-about-me {
   color: var(--font-color);
   margin-top: 2rem;
@@ -168,7 +169,6 @@ body {
 }
 
 /*   SKILLS   */
-
 .skills {
   color: var(--font-color);
   text-align: center;
@@ -180,7 +180,7 @@ body {
   margin: 1rem;
 }
 
-.skills p {
+.skills-description {
   padding: 1rem 6rem;
 }
 
@@ -202,11 +202,33 @@ body {
 }
 
 /*   PROJECTS  */
-
-.proyectos {
+.projects {
   color: var(--font-color);
   padding: 32px 0;
   margin: 2rem 5.5rem;
+}
+
+.projects-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--shadow);
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.project-card {
+  background-color: var(--secondary-bg-color);
+  border-radius: 11px;
+  box-shadow: 0 2px 4px var(--shadow);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 22rem;
 }
 
 .project-pic {
@@ -214,67 +236,44 @@ body {
   height: 100%;
 }
 
-.contenedor-de-proyectos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: .5rem;
-}
-
-.titulo-de-proyectos {
-  text-align: center;
-  margin-bottom: 1rem;
-  color: var(--shadow);
-}
-
-.contenedor-de-proyecto {
-  text-align: center;
-  width: 22rem;
-}
-
-.titulo-de-proyecto {
+.project-title {
   color: var(--shadow);
   font-weight: var(--bold-font);
   margin-bottom: var(--bottom-margin);
 }
 
-.detalles-de-proyecto {
+.project-details {
   text-align: left;
   margin-bottom: var(--bottom-margin)
 }
 
-.tarjeta-de-proyecto {
-  background-color: var(--secondary-bg-color);
-  border-radius: 11px;
-  box-shadow: 0 2px 4px var(--shadow);
-  padding: 20px;
-  margin: 10px;
+.project-link {
+  padding: 1rem 1rem 0 1rem;
 }
 
-.enlace-de-proyecto{
-  color: var(--shadow);
-  font-weight: var(--bold-font);
+#github {
+  border-radius: 50%;
 }
 
-/*   CONTACTO RESPONSIVE  */
-.contenedor-formulario-contacto {
-  max-width: 23.75rem;
+.project-link img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 20%;
 }
 
 /*   CONTACT   */
-
-.contacto {
+.contact {
   color: var(--font-color);
   margin-top: 2rem;
 }
 
-.contacto h2 {
+.contact-title {
   color: var(--shadow);
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
 }
 
-.contenedor-formulario-contacto {
+.contact-container {
   background-color: var(--secondary-bg-color);
   max-width: 30rem;
   margin: 0 auto;
@@ -283,18 +282,18 @@ body {
   box-shadow: 0 2px 4px var(--shadow);
 }
 
-.contenedor-formulario-contacto label {
+.contact-container label {
   line-height: 2.7em;
   font-weight: var(--bold-font);
   color: var(--font-color);
 }
 
-.contenedor-formulario-contacto textarea {
+.contact-container textarea {
   min-height: 5rem;
   font-size: 14px;
 }
 
-.contenedor-formulario-contacto .input-field {
+.input-field {
   width: 100%;
   padding: 0.5rem;
   padding-top: 5px;
@@ -316,7 +315,7 @@ body {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  background-color: #fff;
+  background-color: var(--shadow);
   border: 2px solid var(--font-color);
   border-radius: 5px;
   font-size: 1rem;
@@ -325,14 +324,13 @@ body {
 }
 
 .submit-btn:hover {
-  color: var(--bg-color);
-  background-color: var(--shadow);
-  border: 2px solid var(--bg-color);
+  color: var(--secondary-bg-color);
+  background-color: var(--font-color);
+  border: 2px solid var(--font-color);
   cursor: pointer;
 }
 
 /*  FOOTER   */
-
 footer {
   display: flex;
   justify-content: center;
@@ -344,13 +342,12 @@ footer {
   align-items: center;
 }
 
-.me {
+.footer-me {
   color: var(--shadow);
 }
 
 /*  TO-UP   */
-
-.desplazarse-hacia-arriba { 
+.to-up { 
   margin-top: .5rem;
   cursor: pointer;
 }
@@ -370,11 +367,11 @@ footer {
     padding: .5rem .5rem;
   }
 
-  .navbar h1 {
+  .title-navbar {
     margin-left: .5rem;
   }
 
-  .navbar ul {
+  .links-navbar {
     position: fixed;
     background-color: var(--bg-color);
     flex-direction: column;
@@ -389,53 +386,51 @@ footer {
     margin: 16px;
   }
 
-  .menu-hamburguesa {
+  .burger-menu {
     display: block;
     margin-right: .5rem;
   }
 
-  .navbar ul.show {
+  .links-navbar.show {
     transform: translateX(0);
   }
 
-  /*   ABOUT-ME RESPONSIVE   */
+  /*   ABOUT ME RESPONSIVE   */
   .about-me {
-    margin-top: -4rem;
+    margin-top: -2rem;
     flex-direction: column;
     gap: 0;
+    padding: 0 2.5rem 0 2.5rem;
   }
   
-  .about-me img {
+  .img-me {
     height: 8rem;
     width: 10rem;
     border-radius: 50%;
     margin-top: 3rem;
   }
 
-  .bio {
-    margin-top: .5rem;
-    width: 44rem;
-  }
-
-  .bio h2{
+  .bio-title {
     text-align: center;
     margin-bottom: 0;
   }
 
-  .bio h3{
+  .bio-subtitle {
     text-align: center;
   }
-  
-  .sociales {
+
+  /*   RRSS RESPONSIVE   */
+  .rrss {
     margin-top: -1.5rem;
   }
 
-  .sociales img {
-    width: 2.5rem;
-    height: 2.5rem;
+  .socicon {
+    margin-top: 3rem;
+    width: 2rem;
+    height: 2rem;
   }
 
-  /*   MÁS SOBRE MÍ RESPONSIVE   */
+  /*   MORE ABOUT ME RESPONSIVE   */
   .more-about-me {
     margin-top: 0;
     padding: 0;
@@ -449,12 +444,12 @@ footer {
     padding: 0 3rem 0 3rem;
   }
 
-  /*   HABILIDADES RESPONSIVE  */
+  /*   SKILLS RESPONSIVE  */
   .header-skills {
     margin: 0;
   }
 
-  .skills p {
+  .skills-description {
     padding: 1rem 3rem 0 3rem;
     text-align: start;
   }
@@ -468,35 +463,37 @@ footer {
     height: 5.5rem;
   }
 
-  /*   PROYECTOS RESPONSIVE  */
-  .proyectos {
+  /*   PROJECTS RESPONSIVE  */
+  .proyects {
     margin-top: 0;
   }
 
-  .contenedor-de-proyectos {
+  .projects-container {
     flex-direction: column;
   }
 
-  .contenedor-de-proyecto {
-    width: 30rem;
+  .project-card {
+    width: 28rem;
+  }
+
+  .project-link img {
+    margin-top: 0;
+  }
+
+  .contact-container {
+    width: 28rem;
   }
 }
 
-/*   RESPONSIVE 420PX   */
+/*   RESPONSIVE 480PX   */
 
 @media screen and (max-width: 480px) {
 
-  .hero img {
-    height: 37.5rem;
-    width: 23rem;
+  .about-me {
+    padding: 0 1rem 0 1rem;
   }
 
-  .bio {
-    padding: 0;
-    margin-top: .5rem;
-    max-width: 22rem;
-  }
-
+  /*   MORE ABOUT-ME RESPONSIVE   */
   .more-about-me {
     margin-top: 0;
     padding: 0;
@@ -510,7 +507,8 @@ footer {
     padding: 0 1.5rem 0 1.5rem;
   }
 
-  .skills p {
+  /*   SKILLS RESPONSIVE   */
+  .skills-description {
     padding: .5rem 1.5rem 0 1.5rem;
     text-align: start;
   }
@@ -524,16 +522,18 @@ footer {
     height: 5rem;
   }
 
-  .contenedor-de-proyecto {
+  /*   PROJECTS RESPONSIVE   */
+  .project-card {
     flex-direction: column;
-    max-width: 22rem;
+    max-width: 18rem;
   }
-
-  .contacto {
+  
+  /*   CONTACT RESPONSIVE   */
+  .contact {
     margin-top: -2rem;
   }
 
-  .contenedor-formulario-contacto{
-    max-width: 22rem;
+  .contact-container {
+    max-width: 18rem;
   }
 } 
