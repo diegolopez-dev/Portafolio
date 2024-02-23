@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="assets/css/styles.css"/> 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/my-icon.png"/>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/my-icon.png"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
   </head>
 
     <!--   NAVBAR   -->
     <nav class="navbar">
-      <h1 class="title-navbar">Diego López</h1>
+      <h1 class="title-navbar">DL</h1>
       <ul class="links-navbar">
         <li><a href="#about-me" class="active nav-link">Sobre mí</a></li>
         <li><a href="#skills" class="nav-link">Habilidades</a></li>
@@ -97,10 +98,14 @@
     </section>
 
     <!--   PROJECTS   -->
-    <section class="projects" id="projects">
+    <section class="projects carrusel" id="projects">
       <h2 class="projects-title">Mis proyectos</h2>
-      <div class="projects-container">
-        <div class="project-card">
+      <div class="projects-container carrusel__contenedor">
+        <button aria-label="Anterior" class="carrusel__anterior">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="carrusel__lista">
+        <div class="project-card carrusel__elemento">
           <img src="assets/images/expenseTracker.png" alt="rastreador-de-gastos" loading="lazy" class="project-pic"/>
           <h3 class="project-title">Rastreador de Gastos</h3>
           <p class="project-details">
@@ -117,9 +122,9 @@
             </a>
           </div>
         </div>
-        <div class="project-card">
+        <div class="project-card carrusel__elemento">
           <img src="assets/images/netflixClone.png" alt="netflic-clone" loading="lazy" class="project-pic"/>
-          <h3 class="titulo-de-proyecto">Netflix Clone</h3>
+          <h3 class="project-title">Netflix Clone</h3>
           <p class="project-details">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
             ratione vel inventore labore commodi modi quos culpa aut saepe!
@@ -134,9 +139,9 @@
             </a>
           </div>
         </div>
-        <div class="project-card">
+        <div class="project-card carrusel__elemento">
           <img src="assets/images/greenyEarth.png" alt="greeny-earth" loading="lazy" class="project-pic"/>
-          <h3 class="titulo-de-proyecto">Greeny Earth</h3>
+          <h3 class="project-title">Greeny Earth</h3>
           <p class="project-details">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
             ratione vel inventore labore commodi modi quos culpa aut saepe!
@@ -151,9 +156,9 @@
             </a>
           </div>
         </div>
-        <div class="project-card">
+        <div class="project-card carrusel__elemento">
           <img src="assets/images/expenseTracker.png" alt="rastreador-de-gastos" loading="lazy" class="project-pic"/>
-          <h3 class="titulo-de-proyecto">Rastreador de Gastos</h3>
+          <h3 class="project-title">Rastreador de Gastos</h3>
           <p class="project-details">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
             ratione vel inventore labore commodi modi quos culpa aut saepe!
@@ -168,7 +173,13 @@
             </a>
           </div>
         </div>
-      </div>
+        </div>
+        <button aria-label="Siguiente" class="carrusel__siguiente">
+					<i class="fas fa-chevron-right"></i>
+				</button>
+			</div>
+			<div role="tablist" class="carrusel__indicadores"></div>
+    </div>
     </section>
 
     <!--   CONTACT   -->
@@ -205,7 +216,8 @@
     </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
     <script src="assets/js/app.js"></script>
     
   </body>

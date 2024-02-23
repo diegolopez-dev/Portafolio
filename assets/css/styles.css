@@ -87,7 +87,7 @@ body {
 }
 
 .burger-menu {
-  color: var(--font-color);
+  color: var(--shadow);
   font-size: 2rem;
   border: 0;
   background-color: transparent;
@@ -106,9 +106,9 @@ body {
 }
 
 .img-me {
-  height: 25rem;
-  width: 25rem;
-  border-radius: 20%;
+  width: 16rem;
+  height: 18rem;
+  border-radius: 50%;
 }
 
 .bio {
@@ -143,8 +143,8 @@ body {
 }
 
 .socicon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   background-color: var(--shadow);
   border: 1px solid var(--shadow);
 }
@@ -158,7 +158,6 @@ body {
 /*   MORE ABOUT ME   */
 .more-about-me {
   color: var(--font-color);
-  margin-top: 2rem;
   padding: 1rem 6rem;
 }
 
@@ -204,7 +203,7 @@ body {
 /*   PROJECTS  */
 .projects {
   color: var(--font-color);
-  padding: 32px 0;
+  padding: 28px 0;
   margin: 2rem 5.5rem;
 }
 
@@ -215,25 +214,18 @@ body {
 }
 
 .projects-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .5rem;
 }
 
 .project-card {
   background-color: var(--secondary-bg-color);
   border-radius: 11px;
   box-shadow: 0 2px 4px var(--shadow);
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-  width: 22rem;
-}
-
-.project-pic {
-  width: 100%;
-  height: 100%;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .project-title {
@@ -248,7 +240,7 @@ body {
 }
 
 .project-link {
-  padding: 1rem 1rem 0 1rem;
+  padding: 0rem 1rem;
 }
 
 #github {
@@ -256,9 +248,65 @@ body {
 }
 
 .project-link img {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 20%;
+}
+
+/* --- --- CARRUSEL --- --- */
+.carrusel__contenedor {
+	position: relative;
+}
+
+.carrusel__anterior,
+.carrusel__siguiente {
+	position: absolute;
+	display: block;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	background: none;
+	color: var(--shadow);
+	opacity: 80%;
+}
+
+.carrusel__anterior:hover,
+.carrusel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carrusel__anterior {
+	left: 10px;
+}
+
+.carrusel__siguiente {
+	right: 10px;
+}
+
+.carrusel__lista {
+  max-width: 32rem;
+	overflow: hidden;
+}
+
+.carrusel__elemento {
+	text-align: center;
+}
+
+.carrusel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: var(--shadow);
+	opacity: 1;
+	border-radius: 0;
+}
+
+.carrusel__indicadores .glider-dot:hover {
+	opacity: .7;
+}
+
+.carrusel__indicadores .glider-dot.active {
+	opacity: .5;
 }
 
 /*   CONTACT   */
@@ -358,6 +406,37 @@ footer {
   height: 2rem;
 }
 
+/*   RESPONSIVE 900PX   */
+@media screen and (max-width: 900px) {
+
+  .title-navbar {
+    margin-left: 2.5rem;
+  }
+
+  .about-me {
+    margin-top: -2rem;
+    flex-direction: column;
+    gap: 0;
+    padding: 0 5rem 0 5rem;
+  }
+  
+  .img-me {
+    height: 10rem;
+    width: 12rem;
+    border-radius: 50%;
+    margin-top: 3rem;
+  }
+
+  .bio-title {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .bio-subtitle {
+    text-align: center;
+  }
+}
+
 /*   RESPONSIVE 768PX   */
 
 @media screen and (max-width: 768px) {
@@ -432,7 +511,7 @@ footer {
 
   /*   MORE ABOUT ME RESPONSIVE   */
   .more-about-me {
-    margin-top: 0;
+    margin-top: 1rem;
     padding: 0;
   }
 
@@ -480,8 +559,13 @@ footer {
     margin-top: 0;
   }
 
+  /*   CONTACT RESPONSIVE   */
   .contact-container {
-    width: 28rem;
+    width: 30rem;
+  }
+
+  footer {
+    text-align: center;
   }
 }
 
@@ -493,9 +577,14 @@ footer {
     padding: 0 1rem 0 1rem;
   }
 
+  .socicon {
+    margin-top: 3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
   /*   MORE ABOUT-ME RESPONSIVE   */
   .more-about-me {
-    margin-top: 0;
     padding: 0;
   }
 
@@ -523,9 +612,13 @@ footer {
   }
 
   /*   PROJECTS RESPONSIVE   */
-  .project-card {
-    flex-direction: column;
-    max-width: 18rem;
+  .projects {
+    margin: 0;
+  }
+
+  .carrusel__lista {
+    max-width: 19rem;
+    overflow: hidden;
   }
   
   /*   CONTACT RESPONSIVE   */
@@ -534,6 +627,36 @@ footer {
   }
 
   .contact-container {
-    max-width: 18rem;
+    max-width: 17rem;
+  }
+
+  footer {
+    text-align: center;
   }
 } 
+
+/*   RESPONSIVE 320PX   */
+
+@media screen and (max-width: 320px) {
+  .projects {
+    margin: 0;
+  }
+
+  .carrusel__lista {
+    max-width: 15rem;
+    overflow: hidden;
+  }
+  
+  /*   CONTACT RESPONSIVE   */
+  .contact {
+    margin-top: -2rem;
+  }
+
+  .contact-container {
+    max-width: 13rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+}

@@ -21,7 +21,7 @@ navLink.forEach((link) =>
   })
 );
 
-// funcionalidad de desplazar hacia arriba
+// Funcionalidad de desplazar hacia arriba
 const desplazarArriba = document.querySelector("#to-up");
 
 desplazarArriba.addEventListener("click", () => {
@@ -30,4 +30,32 @@ desplazarArriba.addEventListener("click", () => {
     left: 0,
     behavior: "smooth",
   });
+});
+
+// Carrusel con glider
+window.addEventListener('load', function(){
+	new Glider(document.querySelector('.carrusel__lista'), {
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: '.carrusel__indicadores',
+		arrows: {
+			prev: '.carrusel__anterior',
+			next: '.carrusel__siguiente'
+		},
+		responsive: [
+			{
+			  breakpoint: 768,
+			  settings: {
+				  slidesToShow: 1,
+				  slidesToScroll: 1
+			  }
+			},{
+			  breakpoint: 480,
+			  settings: {
+				  slidesToShow: 1,
+				  slidesToScroll: 1
+			  }
+			}
+		]
+	});
 });
