@@ -98,9 +98,9 @@ body {
 }
 
 .img-me {
-  width: 16rem;
-  height: 18rem;
-  border-radius: 50%;
+  width: 25%;
+  height: 25%;
+  border-radius: 20%;
 }
 
 .bio {
@@ -139,11 +139,12 @@ body {
   height: 2rem;
   background-color: var(--secondary-font-color);
   border: 1px solid var(--secondary-font-color);
+  transition: var(--transition);
+  object-fit: cover;
 }
 
 .socicon:hover {
-  border: 2px solid var(--font-color);
-  transition: var(--transition);
+  transform: scale(1.2);
 }
 
 /*   MORE ABOUT ME   */
@@ -182,6 +183,12 @@ body {
 .icon {
   width: 7rem;
   height: 7rem;
+  transition: var(--transition);
+  object-fit: cover;
+}
+
+.icon:hover {
+  transform: scale(1.2);
 }
 
 .icon-card {
@@ -259,13 +266,6 @@ body {
 	cursor: pointer;
 	background: none;
 	color: var(--secondary-font-color);
-	opacity: 80%;
-}
-
-.carrusel__anterior:hover,
-.carrusel__siguiente:hover {
-  transition: var(--transition);
-	opacity: 100%;
 }
 
 .carrusel__anterior {
@@ -416,7 +416,7 @@ footer {
   .img-me {
     height: 10rem;
     width: 12rem;
-    border-radius: 50%;
+    border-radius: 20%;
     margin-top: 3rem;
   }
 
@@ -478,7 +478,6 @@ footer {
   .img-me {
     height: 8rem;
     width: 10rem;
-    border-radius: 50%;
     margin-top: 3rem;
   }
 

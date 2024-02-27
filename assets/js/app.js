@@ -10,7 +10,7 @@ burger.addEventListener("click", () => {
     ul.classList.toggle("show");
   });
 
-// Cerrar el menú de hambuguesa cuando se hace click en un enlace  
+// Cerrar el menú de hamburguesa cuando se hace click en un enlace  
 
 // Seleccionar enlaces de navegación
 const navLink = document.querySelectorAll(".nav-link");
@@ -60,7 +60,7 @@ window.addEventListener('load', function(){
 	});
 });
 
-// Envio de formulario
+// Envió de formulario
 
 const $form = document.querySelector('#form');
 
@@ -80,7 +80,7 @@ async function handleSubmit(event) {
 		this.reset()
 		Swal.fire({
 			title: "¡GRACIAS!",
-			text: "Formulario enviado correctamente",
+			text: "Correo enviado correctamente",
 			iconColor: '#ffff00',
 			color: '#ffff00',
 			background: '#0b0a13',
