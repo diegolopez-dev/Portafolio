@@ -36,11 +36,11 @@
         <h2 class="bio-title">Hola, soy <span class="span-title">Diego López</span> 👋</h2>
         <h3 class="bio-subtitle">Desarrollador BackEnd</h3>
         <p class="bio-text">
-          💻 Experiencia en desarrollo de aplicaciones tanto en la parte FrontEnd como BackEnd.</br>
-          🎓 Con una base sólida en lenguajes como HTML, CSS, JavaScript y Python estoy con ganas por sumergirme en proyectos emocionantes para expandir mis conocimientos y habilidades técnicas.</br>
-          📋 Con un enfoque en la calidad del código y la arquitectura escalable, me esfuerzo por mantenerme actualizado con las últimas tecnologías en el campo del desarrollo de software.</br>   
+          💻 Desarrollador de aplicaciones BackEnd con conocimientos en FrontEnd.</br>
+          🎓 Con una base sólida en lenguajes como HTML, CSS, JavaScript y Python.</br>
+          📋 Me esfuerzo por mantenerme actualizado con las últimas tecnologías en el campo del desarrollo de software.</br>   
           🐱‍🚀 Motivado por el trabajo en equipo y la colaboración. Buscando expandir mis habilidades y conocimientos.</br>
-          🏭 ¡Busco oportunidades para crecer profesionalmente y asumir desafíos técnicos estimulantes!
+          🏭 ¡Busco oportunidades para crecer profesionalmente y asumir nuevos desafíos !
         </p>
         <div class="rrss">
           <a class="btn-rrss" href="https://github.com/diegolopez-dev" target="_blank"><img src="assets/icons/github.svg" alt="Github" loading="lazy" class="socicon" id="github"/></a>
@@ -54,21 +54,23 @@
     <section class="more-about-me" id="skills">
       <h2>Más sobre mí</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-        autem deleniti cupiditate molestias quis unde quae totam porro dicta
-        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Iusto maiores voluptate architecto cupiditate voluptatem facilis 
-        nobis repudiandae necessitatibus, quaerat fugit eligendi corrupti odio, 
-        iure dolorum tempora commodi, at est saepe.
+        Empecé en el mundo de la informatica despues de acabar la E.S.O, 
+        siempre me llamo la atencion el mundo de la tecnología. 
+        Hice dos curso formativos, un grado medio de sistemas y otro grado superior de desarollo,
+        despues he seguido formandome de forma autodidacta.
+        Apasionado por aprender y mejorar constantemente mis habilidades en programación.
+        Me gustaria que se diera la oportunidad laboral de formar parte de un equipo para seguir creciendo de forma profesional.
       </p>
     </section>
 
     <!--   SKILLS   -->
     <section class="skills">
       <h2 class="header-skills" id="my-skills">Mis habilidades</h2>
-      <p class="skills-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsum magni hic, dicta numquam veritatis fuga? Nostrum ea rem, eligendi nam fugit eveniet, molestiae vitae excepturi consequuntur, quibusdam error tempore.</p>
+      <p class="skills-description">"Como desarrollador tengo conocimientos en el FrontEnd y habilidades        
+        sólidas en el BackEnd. Con experiencia realizando varios proyectos, creando interfaces       
+        con tecnologías como HTML, CSS y JavaScript, al mismo tiempo implementando servidores y  
+        bases de datos utilizando lenguajes como Node.js FastAPI y SQL.
+      </p>
       <h3 class="header-skill">FrontEnd</h3>
       <div class="container-skills">
         <div>
@@ -187,18 +189,18 @@
       <h2 class="contact-title">Contáctame</h2>
       <div class="contact-container">
         <div class="form">
-          <form action="https://formspree.io/f/mrgnqkpo" method="POST">
+          <form id="form" action="https://formspree.io/f/mrgnqkpo" method="POST">
             <div class="control-form">
               <label for="name">Nombre</label>
-              <input type="text" id="name" name="sender-name" placeholder="Escribe tu nombre" class="input-field" required/>
+              <input type="text" id="name" name="sender-name" placeholder="Escriba su nombre" class="input-field" required/>
             </div>
             <div class="control-form">
               <label for="email">Correo Electrónico</label>
-              <input type="email" id="email" name="sender-email" placeholder="Ingresa tu correo electrónico" class="input-field" required/>
+              <input type="email" id="email" name="sender-email" placeholder="Ingrese su correo electrónico" class="input-field" required/>
             </div>
             <div class="control-form">
               <label for="mensaje">Mensaje</label>
-              <textarea id="mensaje" cols="60" rows="10" placeholder="Escribe tu mensaje" name="mensaje" class="input-field" required></textarea>
+              <textarea id="mensaje" cols="60" rows="10" placeholder="Escriba su mensaje" name="mensaje" class="input-field" required></textarea>
             </div>
             <input type="submit" value="Enviar" id="submit-btn" class="submit-btn"/>
           </form>
@@ -218,6 +220,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/app.js"></script>
     
   </body>
