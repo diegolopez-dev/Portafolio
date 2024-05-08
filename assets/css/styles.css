@@ -203,7 +203,7 @@ body {
 .projects {
   color: var(--font-color);
   padding: 28px 0;
-  margin: 2rem 5.5rem;
+  margin: 2rem 4rem;
 }
 
 .projects-title {
@@ -239,7 +239,7 @@ body {
 }
 
 .project-link {
-  padding: 0rem 1rem;
+  padding: 1rem 0 0;
   color: var(--secondary-font-color);
 }
 
@@ -599,16 +599,16 @@ footer {
     margin: 0;
   }
 
+  .project-card {
+    width: 10rem;
+  }
+
   .carrusel__lista {
     max-width: 19rem;
     overflow: hidden;
   }
   
   /*   CONTACT RESPONSIVE   */
-  .contact {
-    margin-top: -2rem;
-  }
-
   .contact-container {
     max-width: 17rem;
   }
@@ -622,7 +622,11 @@ footer {
 
 @media screen and (max-width: 320px) {
   .projects {
-    margin: 0;
+    margin: 0 2rem;
+  }
+
+  .project-card {
+    width: 14rem;
   }
 
   .carrusel__lista {
