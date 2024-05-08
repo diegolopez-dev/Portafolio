@@ -240,16 +240,11 @@ body {
 
 .project-link {
   padding: 0rem 1rem;
+  color: var(--secondary-font-color);
 }
 
 #github {
   border-radius: 50%;
-}
-
-.project-link img {
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 20%;
 }
 
 /* --- --- CARRUSEL --- --- */
@@ -545,10 +540,6 @@ footer {
 
   .project-card {
     width: 28rem;
-  }
-
-  .project-link img {
-    margin-top: 0;
   }
 
   /*   CONTACT RESPONSIVE   */
