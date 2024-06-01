@@ -2,7 +2,7 @@
 
 ## 🚀 Acerca de mí
 
-¡Hola! Soy Diego, un desarrollador web apasionado por la creación de proyectos innovadores. Mi objetivo es seguir aprendiendo y creciendo en el mundo del desarrollo.
+¡Hola! Soy Diego, un desarrollador apasionado por la creación de proyectos innovadores. Mi objetivo es seguir aprendiendo y creciendo en el mundo del desarrollo.
 
 ---
 
