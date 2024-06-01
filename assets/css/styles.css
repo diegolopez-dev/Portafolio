@@ -84,7 +84,7 @@ body {
   border: 0;
   background-color: transparent;
   cursor: pointer;
-  display: none;
+  display: none; 
 }
 
 /*   ABOUT-ME   */
@@ -604,7 +604,7 @@ footer {
   }
 
   .carrusel__lista {
-    max-width: 19rem;
+    max-width: 17rem;
     overflow: hidden;
   }
   
@@ -626,7 +626,7 @@ footer {
   }
 
   .project-card {
-    width: 14rem;
+    width: 13rem;
   }
 
   .carrusel__lista {
