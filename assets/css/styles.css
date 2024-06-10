@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-
 /*   VARIABLES   */
-
 :root {
   --font-family: "Lato", serif;
   --bold-font: 700;
@@ -495,7 +493,6 @@ footer {
 }
 
 /*   RESPONSIVE 768PX   */
-
 @media screen and (max-width: 768px) {
 
   /*   NAVBAR RESPONSIVE   */
@@ -611,7 +608,6 @@ footer {
 }
 
 /*   RESPONSIVE 480PX   */
-
 @media screen and (max-width: 480px) {
   .about-me {
     padding: 0 1rem 0 1rem;
@@ -678,7 +674,6 @@ footer {
 } 
 
 /*   RESPONSIVE 320PX   */
-
 @media screen and (max-width: 360px) {
   .rrss {
     display: grid;

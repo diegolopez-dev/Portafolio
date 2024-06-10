@@ -17,7 +17,7 @@
 ## 🌟 Proyectos Destacados
 
 1. **MariArte:** eCommerce de venta de botellas decoradas.
-2. **Filmoteca:** API para ver, crear, actualizar y borrar peliculas.
+2. **Filmoteca:** API para ver, crear, actualizar y borrar películas.
 3. **Chat:** Chat en tiempo real.
 
 
