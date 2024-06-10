@@ -25,6 +25,6 @@
 
 ## 📧 Contacto
 
-Si quieres ponerte en contacto conmigo, ¡no dudes en escribirme a (mailto:correo@email.com)!
+Si quieres ponerte en contacto conmigo, ¡no dudes en escribirme a (mailto:diego@diegodev.site)!
 
 ¡Gracias por visitar mi portfolio! 😊

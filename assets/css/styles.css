@@ -212,6 +212,15 @@ body {
   margin: 5px;
 }
 
+.icon-card-project {
+  transition: var(--transition);
+  object-fit: cover;
+}
+
+.icon-card-project:hover {
+  transform: scale(1.2);
+}
+
 /*   PROJECTS  */
 .projects {
   color: var(--font-color);
@@ -272,6 +281,11 @@ body {
 
 #handlebars, #socket, #jinja {
   background-color: #242938;
+}
+
+#github {
+  border-radius: 50%;
+  margin-top: 0.4rem;
 }
 
 .project-link {
