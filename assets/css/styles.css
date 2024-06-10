@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 
 /*   VARIABLES   */
 
 :root {
-  --font-family: "Poppins", sans-serf;
+  --font-family: "Lato", serif;
   --bold-font: 700;
   --bg-color: #0b0a13; 
   --secondary-bg-color: #0b0a19;
-  --font-color: #d8e49e;
-  --secondary-font-color: #eded74;
+  --font-color: #dde5b9;
+  --secondary-font-color: #e1e185;
   --bottom-margin: 0.5rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
@@ -40,6 +41,7 @@ a:hover {
 
 body {
   font-family: var(--font-family);
+  font-weight: 400;
   background-color: var(--bg-color);
 }
 
@@ -148,7 +150,7 @@ body {
 
 .btn>a {
   color: var(--secondary-font-color);
-  font-size: 18px;
+  font-family: cursive;
 }
 
 .socicon {
@@ -268,14 +270,13 @@ body {
   margin: 5px;
 }
 
+#handlebars, #socket, #jinja {
+  background-color: #242938;
+}
+
 .project-link {
   padding: 1rem 0 0;
   color: var(--secondary-font-color);
-}
-
-#github {
-  border-radius: 50%;
-  margin-top: 0.4rem;
 }
 
 /* --- --- CARRUSEL --- --- */
@@ -451,6 +452,10 @@ footer {
     margin-left: 2.5rem;
   }
 
+  .links-navbar {
+    font-size: 16px;
+  }
+
   .about-me {
     margin-top: -2rem;
     flex-direction: column;
@@ -594,7 +599,6 @@ footer {
 /*   RESPONSIVE 480PX   */
 
 @media screen and (max-width: 480px) {
-
   .about-me {
     padding: 0 1rem 0 1rem;
   }
@@ -604,11 +608,7 @@ footer {
   }
 
   .rrss {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-    height: 6rem;
+    gap: .2rem;
   }
 
   /*   MORE ABOUT-ME RESPONSIVE   */
@@ -665,7 +665,15 @@ footer {
 
 /*   RESPONSIVE 320PX   */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
+  .rrss {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    height: 6rem;
+  }
+
   .projects {
     margin: 0 2rem;
   }
