@@ -148,7 +148,7 @@ body {
 
 .btn>a {
   color: var(--secondary-font-color);
-  font-family: cursive;
+  font-size: 12px;
 }
 
 .socicon {
@@ -674,7 +674,7 @@ footer {
 } 
 
 /*   RESPONSIVE 320PX   */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
   .rrss {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
