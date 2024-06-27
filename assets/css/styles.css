@@ -278,6 +278,7 @@ body {
 }
 
 #handlebars, #socket, #jinja {
+  transition: var(--transition);
   background-color: #242938;
 }
 
@@ -389,7 +390,7 @@ body {
 
 .contact-container textarea {
   min-height: 5rem;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .input-field {
@@ -618,7 +619,7 @@ footer {
   }
 
   .rrss {
-    gap: .2rem;
+    gap: .6rem;
   }
 
   /*   MORE ABOUT-ME RESPONSIVE   */
