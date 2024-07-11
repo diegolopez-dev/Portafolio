@@ -19,7 +19,7 @@
 1. **MariArte:** eCommerce de venta de botellas decoradas.
 2. **Filmoteca:** API para ver, crear, actualizar y borrar películas.
 3. **Chat:** Chat en tiempo real.
-2. **Biblioteca:** API para ver, crear, actualizar y borrar libros.
+4. **Biblioteca:** API para ver, crear, actualizar y borrar libros.
 
 
 ---
