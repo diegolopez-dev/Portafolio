@@ -474,7 +474,7 @@ footer {
     gap: 0;
     padding: 0 5rem 0 5rem;
   }
-  
+
   .img-me {
     height: 12rem;
     width: 18rem;
@@ -610,7 +610,7 @@ footer {
 
 /*   RESPONSIVE 480PX   */
 @media screen and (max-width: 480px) {
-  .about-me {
+  .bio-text {
     padding: 0 1rem 0 1rem;
   }
 
@@ -676,6 +676,10 @@ footer {
 
 /*   RESPONSIVE 320PX   */
 @media screen and (max-width: 320px) {
+  .bio-text {
+    padding: 0 .5rem 0 .5rem;
+  }
+
   .rrss {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
