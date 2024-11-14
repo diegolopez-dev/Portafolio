@@ -222,7 +222,6 @@ body {
 .projects {
   color: var(--font-color);
   padding: 28px 0;
-  margin: 2rem 4rem;
 }
 
 .projects-title {
@@ -533,7 +532,7 @@ footer {
     margin-top: -2rem;
     flex-direction: column;
     gap: 0;
-    padding: 0 2.5rem 0 2.5rem;
+    padding: 2rem;
   }
   
   .img-me {
@@ -610,8 +609,8 @@ footer {
 
 /*   RESPONSIVE 480PX   */
 @media screen and (max-width: 480px) {
-  .bio-text {
-    padding: 0 1rem 0 1rem;
+  .about-me {
+    padding: .7rem;
   }
 
   .socicon {
